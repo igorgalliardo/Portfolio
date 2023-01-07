@@ -309,8 +309,8 @@ button:hover{
     .project-mobile .images{
         width: 100%;
     }
-    .project-mobile .images img{
-        transform: none;
+    .project-mobile .images img:hover{
+        transform: scale(1);
     }
     .project-mobile .project-title{
         width: 100%;
