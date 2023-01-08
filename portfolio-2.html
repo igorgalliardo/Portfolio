@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-det.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Portfolio-2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="imgs/logo.png"/></div>
+            <nav>
+                <ul>
+
+                    <li id="detailed"><a href="https://drive.google.com/drive/u/0/folders/18mI2zC3LrfRb10tJewb5XF0z28cC-jT4" target="_blank">RESUME</a></li>
+                    <!--<li><a href="#contact">CONTACT ME</a></li>-->
+                    <!--<li><a href="">ABOUT</a></li>-->
+                    <li><a href="index.html">HOME</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="mobile-menu" onclick="openMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <div class="menu-m-box">
+            <div class="mobile-m-menu" onclick="closeMenu()">
+                <div class="close-m-menu">
+                    <h1>X</h1>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <!--<li><a href="#contact">CONTACT ME</a></li>-->
+                        <li><a href="https://drive.google.com/drive/u/0/folders/18mI2zC3LrfRb10tJewb5XF0z28cC-jT4" target="_blank">RESUME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dash-photos">
+            <h1>Covid Global Situation - 2022</h1>
+            <div class="photo">
+                <img src="./imgs/projects/main-page.png">
+            </div>
+            <div class="photo">
+                <img src="./imgs/projects/main-page-tooltip.png">
+            </div>
+            <div class="photo">
+                <img src="./imgs/projects/second-page.png">
+            </div>
+            <div class="description">
+                <h3>About this report</h3>
+                <b>Main Page (General Results)</b>
+                <p>
+                    This one was developed focused to bring more details to the investors related Oi Company results. The data that the business share with all investors is available to be access by csv file, so then I did create an python script to clean this data and load the useful data into my sql server db that was created for this project in specifically.
+                </p>
+                <p>In the first graph you will see a relation between percentage of net interest and the consolidated interest. <b>All values here is presented by quarter.</b></p>
+                <p>In the second chart we can see a general overview, also by quarter for profit vs loss.</p>
+                <p>And below we can check two round charts with more details about income per category and Costs per category respectively.</p>
+                <b>Main Page (Tool Tip)</b>
+                <p>Keep in this main page (seconde image) I added one tooltip for income per category where the customer can check total of income for each product/service.</p>
+                
+                <b>Third Image</b>
+                <p>In this last image we can see debt data, once that this company (OI) is under judicial recovery to avoid bankruptcy.</p>
+                <p>For the first chart I'm presenting inside of bar a comparison between long term debt and short term debt. And into the line the net debt.</p>
+                <p>Next to this chart mentioned above we have also a graph of bar showing how this debt was growing by quarter since 2020.</p>
+                <p>Below we have a line comparison showing the sum of net debt by quarter vs national currency exposure and international currency exposure. To finish in the round chart we have total of net debt per year since 2020.</p>                
+                <h3>Technologies that were applied</h3>
+                <b>Power BI:</b>
+                <p>The main tool used to develop this report, inside of this one I could do also build all ETL process and data cleansing. So when I load again new data (from my data wharehouse to power bi) all ETL proccess is completly done to support the standard data, and transform it in data that I really need.</p>
+                <b>Excel (CSV) & SQL Server:</b>
+                <p>Excel was my reference with standard data extracted from company RI portal. The all data that I really need was transformed and loaded into my sql server database.</p>
+                <b>Python:</b>
+                <p>In python I did use only to transform the CSV file for a data that I really needed to build this analysis in power bi. So in future if I need to extract new standard data, this one will be transformed and loaded using my python script, just running a simple command line. (Of course this one can be change to a job that can run daily or monthly).</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Thanks to access my portfolio. I hope we can work together soon. @Igor Galliardo Silva</p> &nbsp;&nbsp; <img src="imgs/brazil.png"/> &nbsp;&nbsp; <img src="imgs/canada.png"/></p>
+    </div>
+        <script>
+            const boxMenu = document.querySelector('.menu-m-box')
+    
+            function openMenu() {
+                boxMenu.style.display="block"
+            }
+            function closeMenu(){
+                boxMenu.style.display="none"
+            }
+        </script>
+</body>
+</html>
