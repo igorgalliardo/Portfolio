@@ -251,17 +251,17 @@ button:hover{
     nav ul li{
         display: none;
     }
+    .mobile-menu{
+        width: 60px;
+    }
     .menu-m-box{
         display: none;
         width: 100%;
         height: 100vh;
         z-index: 999;
-        background-color: #1c1c1c;
+        background-color: rgb(241, 241, 241);
         top: 0;
         position: absolute;
-    }
-    .mobile-menu{
-        width: 60px;
     }
     .close-m-menu{
         width: 100%;
@@ -271,7 +271,7 @@ button:hover{
     .close-m-menu h1{
         font-size: 50px;
         font-family: "Roboto";
-        color: #FFF;
+        color: #1c1c1c;
         margin-right: 25px;
     }
     .mobile-menu .bar{
@@ -287,12 +287,10 @@ button:hover{
         flex-wrap: wrap;
     }
     .options{
-        width: 80%;
-        height: 400px;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
     }
     .options ul li{
         list-style: none;
@@ -301,9 +299,8 @@ button:hover{
     .options a{
         text-decoration: none;
         font-family: "Roboto";
-        color: #FFF;
+        color: #1c1c1c;
         font-size: 2.5rem;
-        text-align: center;
     }
     .about{
         width: 100%;
@@ -491,7 +488,7 @@ button:hover{
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 20px;
-        margin-bottom: 20px;
+        padding: 35px;
     }
     
     .portfolio .title{
@@ -560,6 +557,7 @@ button:hover{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 0px;
     }
     .contact-me h2{
         width: 100%;
