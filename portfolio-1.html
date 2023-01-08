@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="portfolio-det.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Portfolio-1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="imgs/logo.png"/></div>
+            <nav>
+                <ul>
+
+                    <li id="detailed"><a href="https://drive.google.com/drive/u/0/folders/18mI2zC3LrfRb10tJewb5XF0z28cC-jT4" target="_blank">RESUME</a></li>
+                    <!--<li><a href="#contact">CONTACT ME</a></li>-->
+                    <!--<li><a href="">ABOUT</a></li>-->
+                    <li><a href="index.html">HOME</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="mobile-menu" onclick="openMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <div class="menu-m-box">
+            <div class="mobile-m-menu" onclick="closeMenu()">
+                <div class="close-m-menu">
+                    <h1>X</h1>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <!--<li><a href="#contact">CONTACT ME</a></li>-->
+                        <li><a href="https://drive.google.com/drive/u/0/folders/18mI2zC3LrfRb10tJewb5XF0z28cC-jT4" target="_blank">RESUME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dash-photos">
+            <h1>Covid Global Situation - 2022</h1>
+            <div class="photo">
+                <img src="/imgs/projects/main_page.png">
+            </div>
+            <div class="photo">
+                <img src="/imgs/projects/Cases-Deaths-Details.png">
+            </div>
+            <div class="photo">
+                <img src="/imgs/projects/Vaccines-Details.png">
+            </div>
+            <div class="description">
+                <h3>About this report</h3>
+                <b>Main Page</b>
+                <p>Report developed completly from scratch. The goal here is to present the main results around the world when we see the cases, deaths and vaccine status.</p>
+                <p>Inside of main page you can see one general overview considering cases, deaths and vaccinations in this one you are able to check algo the top 5 Countries with more population fully vaccinated. Other
+                    important information that you can check is the top 10 countries with more cases since the pandemic started.
+                </p>
+                <p>Keep going trough the main page, we have a comparison between all regions in number of total vaccinated. And besides this chart we have also a number still by region with a comparison with total people fully vaccinated vs vaccinated with at least one dose.</p>
+                <p>And in this round chart we have the total of cases in the current day.</p>
+                <b>Second Page</b>
+                <p>In this second page I'm showing more details, now more focused in cases and deaths for covids in general. For cards we will see respectively total of cases in general, total of deaths, percentage of deaths in comparison with total of cases by month/year and percentage of population that already got covid.</p>
+                <p>Now below in the line charts we will see respectively, total of cases per day, and total of deaths also in daily numbers.</p>
+                <p>Finishing second page we will see in the last two informations one chart that shows the percentage of deaths (into the line) and total of cases and deaths per month (inside of bar). The table shows details by countries filtering countries with more average cases per total of population.</p>
+                <b>Third Page</b>
+                <p>And in the last page of dashboard is more related to vaccinations details around the world. Starting with cards respectively, we have total of people that took at least one dose of vaccine, percentage of people in total of population that took at least firs dose, percentage of people fully vaccinated, and total of vaccines types applied in the world.</p>
+                <p>In these first two information we are seeing a graph with bars that indicate total of people vaccinated with at least one dose vs people fully vaccinated, and in line we have the in this total of people vaccinated with at least one dose, the percentage of people fully vaccinated. Next to this chart we have a treemap that bring top 10 countries with more doses administered.</p>
+                <p>For last two charts we have in the first one comparison inside of bar that shows total of population per country vs total of population fully vaccinated, and into the line show the percentage of population fully vaccinated. And in the last char we have total vaccines administered inside of bar, and into the line the total vaccines type used for each country.</p>
+                <h3>Technologies that were applied</h3>
+                <b>Power BI</b>:<p>The main tool used to develop this report, inside of this one I could do also build all ETL process and data cleansing. So when I load again new data (from my data wharehouse to power bi) all ETL proccess is completly done to support the standard data, and transform it in data that I really need.</p>
+                <b>Excel and SQL Server</b>:<p>Excel and SQL Server was two important tools that I had to use, both worked like a data store. Excel was the place that I could save the most data about COVID in general. And the SQL Server was the place that I save and store data about locations, regions and countries flag.</p>
+                <b>Python</b>:<p>For this project in specific I applied python as part of my studies, so I used python to extract all flags images links from wikipedia and then save it into my sql server. Basicallt what I did was a web scrapping from wikipedia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Thanks to access my portfolio. I hope we can work together soon. @Igor Galliardo Silva</p> &nbsp;&nbsp; <img src="imgs/brazil.png"/> &nbsp;&nbsp; <img src="imgs/canada.png"/></p>
+    </div>
+        <script>
+            const boxMenu = document.querySelector('.menu-m-box')
+    
+            function openMenu() {
+                boxMenu.style.display="block"
+            }
+            function closeMenu(){
+                boxMenu.style.display="none"
+            }
+        </script>
+</body>
+</html>
